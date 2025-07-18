@@ -35,3 +35,10 @@ echo " Today learning the variable concept"
 env_variables=$(printenv)
 current_dir=$PWD
 user_name=$USER
+echo "username is $user_name"
+echo "this is your present working directory $current_dir"
+# performing calcuator operations
+first_value=20
+second_value=30
+additon='expr($first_value + $second_value)'
+echo $additon
