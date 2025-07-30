@@ -4,4 +4,9 @@
 variable_name1=$1
 variable_name2=$2
 echo "$variable_name1 and $variable_name2"
-echo "The is your script_file: $0"
+echo "This is your script_file: $0"
+echo "number of argument passed: $#"
+echo "what arguments are passed by user is: $@"
+echo "what are the arguments are passed by user is: $*"
+echo "provide exit status code for previous command 0 for succuss 127 for failed $?"
+echo "this is process id : $$" 
