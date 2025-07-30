@@ -26,14 +26,16 @@ SSH_TTY=/dev/pts/0
 BASH_FUNC_which%%=() {  ( alias;
  eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot "$@"
 }
-_=/usr/bin/printenv
-"""
+_=/usr/bin/printenv"""
+
 
 # echo is command to display the content 
-echo " welcome to  shell scripting"
+echo -e " welcome to  shell scripting"
 echo " Today learning the variable concept"
 env_variables=$(printenv)
 current_dir=$PWD
+dir=$(pwd)
+echo -e"$dir"
 user_name=$USER
 echo "username is $user_name"
 echo "this is your present working directory $current_dir"
