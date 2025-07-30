@@ -6,8 +6,8 @@ variable_name2=$2
 echo "$variable_name1 and $variable_name2"
 echo "This is your script_file: $0"
 echo "number of argument passed: $#"
-echo " this is last argument: ${n}"
-echo "what are the aruguments passed in between ${5}-${n}"
+echo " this is last argument: $n"
+echo "what are the aruguments passed in between $5 - $n"
 echo "what arguments are passed by user is: $@"
 echo "what are the arguments are passed by user is: $*"
 asdf
