@@ -42,7 +42,7 @@ first_value=20
 second_value=30
 additon='expr($first_value + $second_value)'
 
-subtraction=$($first_value - $second_value)
+subtraction=$(($first_value - $second_value))
 
 echo $additon
 echo "The subration of $first_value and $second_value is $subtraction"
