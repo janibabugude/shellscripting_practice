@@ -15,5 +15,5 @@ echo -n "the multipilication of two numbers $num1 and $num2 is: $multiplication"
 com
 # take input from user with secert data like hiding password using read -s commond
 read -p "enter username" username
-read -s -p "enter password" password $'\n'
+read -s -p "enter password" $'\n' password
 echo " the username is $username and password is $password" 
