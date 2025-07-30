@@ -1,5 +1,5 @@
 # take input from user next line using read coomand
-<<com
+: << 'com'
 echo "enter the number : "
 read num1
 echo "enter the number: "
