@@ -1,5 +1,6 @@
+#!/bin/bash
 # take input from user next line using read coomand
-: << 'com'
+: << 'comment'
 echo "enter the number : "
 read num1
 echo "enter the number: "
@@ -12,7 +13,7 @@ addition=$(($num1+$num2))
 echo "The addition of two numbers ${num1} and ${num2} is $addition"
 multiplication=$(($num1 * $num2))
 echo -n "the multipilication of two numbers $num1 and $num2 is: $multiplication"
-com
+comment
 # take input from user with secert data like hiding password using read -s commond
 read -p "enter username " username
 read -sp "enter password " password "$'\n'"
