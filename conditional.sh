@@ -24,5 +24,5 @@ then
         echo "you are older.."
     fi
 else 
-    echo -e "please provide your age:" 
+    echo -n "please provide your age:" 
 fi
