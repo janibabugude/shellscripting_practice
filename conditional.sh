@@ -10,10 +10,7 @@ fi
 comment
 # to take the age and check age < or > = using if
 read -p"enter you age: " age
-if [ -n $age ]
-then
-    
-    
+if [ -n $age ];then
     if [ $age -le 10 ];then
         echo "you are child"
     elif [ $age -gt 10 -a $age -lt 20 ];then
