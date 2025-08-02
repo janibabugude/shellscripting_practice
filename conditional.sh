@@ -12,6 +12,8 @@ comment
 read -p"enter you age: " age
 if [ -z $age ]
 then
+    echo "please enter the age"
+    exit 1
     if [ $age -le 10 ];then
         echo "you are child"
     elif [ $age -gt 10 -a $age -lt 20 ];then
