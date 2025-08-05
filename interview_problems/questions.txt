@@ -1,0 +1,31 @@
+Sample Real IT Interview Shell Scripting Questions (for self-solving)
+Write a shell script to check if a user-supplied directory exists or not. If it exists, output the number of files inside it. If not, print "Directory does not exist."
+
+Create a backup script that backs up all .conf files from /etc to a directory ~/backup_conf and appends the current date to the filename.
+
+Write a script to find the top 5 largest files in a specified directory and print their names and sizes in human-readable format.
+
+Write a shell script to monitor CPU usage every 5 seconds and log it to a file. Stop after 1 minute.
+
+Implement a script to parse /var/log/syslog and print all ERROR or WARNING messages from the last 24 hours.
+
+Write a shell function that reverses a string passed as an argument.
+
+Write a script to check whether a given number is prime or not.
+
+Create a menu-driven script for basic user management: add user, delete user, list users.
+
+Write a script that accepts a filename and prints the count of lines, words, and characters in the file.
+
+Write a script that reads multiple filenames as arguments and checks if they all exist. If any does not, print the missing files.
+
+How to Verify Your Solutions
+Run your scripts multiple times with different inputs.
+
+Check edge cases (e.g., empty directory, invalid input).
+
+Compare manual output with script output.
+
+Get feedback by showing your work to peers or community forums.
+
+Avoid copy-pasting solutions; modify and understand each line yourself.
