@@ -1,39 +1,32 @@
 # Write a script to check whether a given number is prime or not.
 
 #!/bin/bash
+#!/bin/bash
 
-# Check if input is a number
-check_number() {
-    [[ "$1" =~ ^[0-9]+$ ]]
-}
+# Colors
+RED="\033[31m"
+GREEN="\033[32m"
+YELLOW="\033[33m"
+RESET="\033[0m"
 
-# Function to check prime number
-is_prime() {
-    local num=$1
-    if (( num < 2 )); then
-        return 1  # Not prime
-    fi
-    for ((i=2; i*i<=num; i++)); do
-        if (( num % i == 0 )); then
-            return 1  # Not prime
-        fi
-    done
-    return 0  # Prime
-}
-
-# Get valid number from user
+# Keep prompting until valid input
 while true; do
     read -p "Enter number: " num
-    if check_number "$num"; then
-        break
-    else
-        echo "ERROR: Please enter a valid number."
+    [[ "$num" =~ ^[0-9]+$ ]] && break
+    echo -e "${RED}ERROR: Please enter a valid number.${RESET}"
+done
+
+# Prime check
+if (( num < 2 )); then
+    echo -e "${YELLOW}$num is Not Prime${RESET}"
+    exit
+fi
+
+for ((i=2; i*i<=num; i++)); do
+    if (( num % i == 0 )); then
+        echo -e "${RED}$num is Not Prime${RESET}"
+        exit
     fi
 done
 
-# Check if prime
-if is_prime "$num"; then
-    echo "$num is Prime"
-else
-    echo "$num is Not Prime"
-fi
+echo -e "${GREEN}$num is Prime${RESET}"
